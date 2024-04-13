@@ -79,6 +79,11 @@ std::string product::tostring() const
     return out.str();
 }
 
+product *product::clone()
+{
+    return new product(*this);
+}
+
 int drink::numDrinks = 0;
 
 std::string drink::getBaseStr() const

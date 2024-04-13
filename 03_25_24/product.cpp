@@ -313,3 +313,8 @@ std::string iceCream::tostring()
         << " - " << product::tostring();
     return out.str();
 }
+
+product *product::clone()
+{
+    return nullptr;
+}
